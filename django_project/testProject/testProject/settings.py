@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main' #add name of app
+    
+    #custom apps
+    'main', #add name of app
+    'tictactoe'
 ]
 
 MIDDLEWARE = [
