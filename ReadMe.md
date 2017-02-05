@@ -24,7 +24,8 @@ I'm simply listing standalone programs in the root directory here:
 django_env
 ----------------------
 
-In this directory I've set up Django v1.8 and other package dependencies in a virtual environment.
+In this directory I've set up Django v1.9 and other package dependencies in a virtual environment.
+The project is based on the LTS v1.8 cycle.
 
 I'm following along with a pluralsight course taught by Reindert-Jan Ekker (https://nl.linkedin.com/in/rjekker),
 while building a project that uses both Django and Angular.
