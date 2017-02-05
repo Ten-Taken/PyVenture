@@ -21,14 +21,14 @@ I'm simply listing standalone programs in the root directory here:
 	three strikes.
 
 
-django_project
+django_env
 ----------------------
 
-In this directory I'm following along with a pluralsight course taught by Reindert-Jan Ekker (https://nl.linkedin.com/in/rjekker).
+In this directory I've set up Django v1.8 and other package dependencies in a virtual environment.
 
-Django and package dependencies are set up in a virtual environment.
+I'm following along with a pluralsight course taught by Reindert-Jan Ekker (https://nl.linkedin.com/in/rjekker),
+while building a project that uses both Django and Angular.
 
-It's important to note that the django_project directory is the environment
-level, and the actual django project is under 'testProject'
+The final project is to build a Scrum Board application that a team can use.
 
-The course is taught using Django 1.7 (I believe), however I'm building with version 1.10.  Many of the examples use deprecated functionality, and as such I am deviating where needed by following django project documentation.
+
