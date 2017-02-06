@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title></title>
+</head>
+
+<body ng-app="scrumboard.demo">
+
+	<!--Angular VIEW -->
+	{% verbatim %}  <!-- tells django to ignore {{}} so Angular can use scope -->
+	<div ng-controller="ScrumboardController">
+		<div ng-repeat="list in data">
+			<h3>{{ list.name }}</h3>
+			<ul>
+				<li ng-repeat="card in list.cards">{{ card.title }}</li>
+			</ul>
+			<input type="text" ng-model="new_title" /> 
+			<button ng-click="add(list, new_title)">+</button>
+		</div>
+	</div>
+	{% endverbatim %}
+
+
+
+
+		<!--AngularJS CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+
+
+	<!-- django import static -->
+	<script src="{% static 'scrumboard/scrumboard.js' %}"></script>
+
+
+</body>
+</html>
