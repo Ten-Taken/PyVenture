@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #rest framework app
+    'rest_framework',
+
     #Custom Apps
     'scrumboard',
 ]
