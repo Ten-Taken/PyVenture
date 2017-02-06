@@ -5,10 +5,10 @@
 	'use strict';
 
 	angular.module('scrumboard.demo', [])
-		.controller('ScrumboardController', ['$scope',ScrumboardController]);
+		.controller('ScrumboardController', ['$scope','$http',ScrumboardController]);
 
 		// Angular CONTROLLER
-	function ScrumboardController($scope){
+	function ScrumboardController($scope, $http){
 
 		// ANGULAR MODEL
 		$scope.add = function(list,title){
@@ -20,36 +20,12 @@
 			//so, a card is created, and pushed into lists cards array
 		};
 
+		$scope.data = []; //Start with empty list
 
-		$scope.data = [
-			{
-				name: 'Django demo',
-				cards: [
-					{
-						title: 'Create Models'
-					},
-					{
-						title: 'Create View'
-					},
-					{
-						title: 'Migrate Database'
-					},
-				]
-			},
-			{
-				name: 'Angular demo',
-				cards: [
-					{
-						title: 'Write HTML'
-					},
-					{
-						title: 'Write JavaScript'
-					},
-
-				]
-			}
-
-		];
+			//This is an asynchronous call to server
+		$http.get('/scrumboard/lists').then(function(response){
+			$scope.data = response.data; //This is assigning response to the empty list in JSON format.
+		}); 
 
 
 	}//END ScrumboardController
