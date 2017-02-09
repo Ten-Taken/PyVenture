@@ -4,8 +4,8 @@
 <html>
 <head>
 
-
-	<title></title>
+<link rel="stylesheet" type="text/css" href="{% static 'scrumboard/css/scrumboard.css' %}">
+	
 </head>
 
 <body ng-app="scrumboard.demo">
@@ -13,13 +13,17 @@
 	<!--Angular VIEW -->
 	{% verbatim %}  <!-- tells django to ignore {{}} so Angular can use scope -->
 	<div ng-controller="ScrumboardController">
-		<div ng-repeat="list in data">
+		<div class="list" ng-repeat="list in data">
 			<h3>{{ list.name }}</h3>
 			<ul>
-				<li ng-repeat="card in list.cards">{{ card.title }}</li>
+				<li ng-repeat="card in list.cards">
+					<scrumboard-card></scrumboard-card>
+				</li>
 			</ul>
-			<input type="text" ng-model="new_title" /> 
-			<button ng-click="add(list, new_title)">+</button>
+			<div class="flex">
+				<input type="text" ng-model="new_title" /> 
+				<button ng-click="add(list, new_title)">+</button>
+			</div>
 		</div>
 	</div>
 	{% endverbatim %}
@@ -33,6 +37,10 @@
 
 	<!-- django import static -->
 	<script src="{% static 'scrumboard/scrumboard.js' %}"></script>
+
+	<!-- Import angular directives from django file structure-->
+		<!--Load after the angular module -->
+	<script src="{% static 'scrumboard/card.directive.js' %}"></script>
 
 
 </body>
