@@ -49,3 +49,14 @@ ul {
 .flex button {
 	flex-basis: auto;
 }
+
+
+.card button,input, textarea{
+	color: #404040;
+	margin: 2px 0px;
+}
+
+.card textarea{
+	width: 100%;
+	resize: vertical;
+}
