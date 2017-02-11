@@ -31,7 +31,7 @@ Here are some screenshots
 This shows django's admin interface serving JSON from one of the model classes 
 for the database.
 
-![JSON API](/master/images/django1screen.png?raw=true)
+![JSON API](/images/django1screen.png?raw=true)
 
 
 **GUI for the application**
