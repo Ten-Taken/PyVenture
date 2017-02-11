@@ -45,4 +45,4 @@ unnecessary network traffic.
 
 Editing data (PUT request)
 
-![Edit GUI](https://github.com/Ten-Taken/PyVenture/tree/master/images/django4screen.png?raw=true)
+![Edit GUI](images/django4screen.png?raw=true)
