@@ -33,6 +33,12 @@
 			*/
 		};
 
+		//Login function (temp posting hard-coded credentials)
+		$scope.login = function(){
+			$http.post('/auth_api/login/',
+				{username: 'bob', password: 'bob12345'});
+		};
+
 		$scope.data = []; //Start with empty list
 
 			//This is an asynchronous call to server

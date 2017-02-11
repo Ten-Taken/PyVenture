@@ -13,6 +13,10 @@
 	<!--Angular VIEW -->
 	{% verbatim %}  <!-- tells django to ignore {{}} so Angular can use scope -->
 	<div ng-controller="ScrumboardController">
+
+		<button ng-click="login()">Login</button>
+		<a href="/auth_api/logout">Logout</a><br />
+
 		<div class="list" ng-repeat="list in data">
 			<h3>{{ list.name }}</h3>
 			<ul>
@@ -37,6 +41,9 @@
 
 	<!-- django import static -->
 	<script src="{% static 'scrumboard/scrumboard.js' %}"></script>
+
+	<!-- import app config scripting: Tells angular about django's CSRF -->
+	<script src="{% static 'scrumboard/scrumboard.config.js' %}"></script>
 
 	<!-- Import angular directives from django file structure-->
 		<!--Load after the angular module -->
