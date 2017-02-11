@@ -31,7 +31,7 @@ Here are some screenshots
 This shows django's admin interface serving JSON from one of the model classes 
 for the database.
 
-![JSON API](https://github.com/Ten-Taken/PyVenture/tree/master/images/django1screen.png?raw=true)
+![JSON API](/master/images/django1screen.png?raw=true)
 
 
 **GUI for the application**
@@ -41,7 +41,7 @@ non-blocking server calls, allowing for data manipulation to be stored instantly
 without any page reload. A 500 millisecond timeout is set on user input to prevent
 unnecessary network traffic. 
 
-![App GUI](https://github.com/Ten-Taken/PyVenture/tree/master/images/django3screen.png?raw=true)
+![App GUI](/images/django3screen.png?raw=true)
 
 Editing data (PUT request)
 
