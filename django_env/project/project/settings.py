@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     #Custom Apps
     'scrumboard',
+    'auth_api'
 ]
 
 MIDDLEWARE_CLASSES = [
