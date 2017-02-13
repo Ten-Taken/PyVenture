@@ -38,6 +38,7 @@ unnecessary network traffic.
 
 
 **Authentication and Session**
+
 This shows server status of http requests. Angular serves the correct view after
 credentials are authenticated through a custom auth app in django.
 
@@ -51,7 +52,7 @@ Successful POST
 **Managing Data**
 
 This is a quick view of table data through a web GUI of the sqlite3 database.
-![database](images/django9screen.png?raw=true)
+![database](images/django8screen.png?raw=true)
 
 
 **Card Class API**
