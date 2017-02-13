@@ -30,6 +30,9 @@
 	<!-- import app config scripting: Tells angular about django's CSRF -->
 	<script src="{% static 'scrumboard/scrumboard.config.js' %}"></script>
 
+	<!--Import login service from static files -->
+	<script src="{% static 'scrumboard/js/login.service.js' %}"></script>
+
 	<!-- Import angular directives from django file structure-->
 		<!--Load after the angular module -->
 	<script src="{% static 'scrumboard/card.directive.js' %}"></script>

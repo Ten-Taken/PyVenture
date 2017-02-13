@@ -6,10 +6,10 @@
 
 	angular.module('scrumboard.demo', ['ngRoute'])
 		.controller('ScrumboardController', 
-			['$scope','$http','$location',ScrumboardController]);
+			['$scope','$http','$location','Login',ScrumboardController]);
 
 		// Angular CONTROLLER
-	function ScrumboardController($scope, $http,$location){
+	function ScrumboardController($scope, $http,$location, Login){
 
 		// ANGULAR MODEL
 		$scope.add = function(list,title){
@@ -34,12 +34,9 @@
 			*/
 		};
 
-		$scope.logout = function(){
-			$http.get('/auth_api/logout/')
-				.then(function(){
-					$location.url('/login');
-				});
-		}
+		Login.redirectIfNotLoggedIn();
+
+		$scope.logout = Login.logout;
 
 		$scope.data = []; //Start with empty list
 
