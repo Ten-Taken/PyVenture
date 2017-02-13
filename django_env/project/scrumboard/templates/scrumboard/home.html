@@ -9,38 +9,23 @@
 </head>
 
 <body ng-app="scrumboard.demo">
-
-	<!--Angular VIEW -->
-	{% verbatim %}  <!-- tells django to ignore {{}} so Angular can use scope -->
-	<div ng-controller="ScrumboardController">
-
-		<button ng-click="login()">Login</button>
-		<a href="/auth_api/logout">Logout</a><br />
-
-		<div class="list" ng-repeat="list in data">
-			<h3>{{ list.name }}</h3>
-			<ul>
-				<li ng-repeat="card in list.cards">
-					<scrumboard-card></scrumboard-card>
-				</li>
-			</ul>
-			<div class="flex">
-				<input type="text" ng-model="new_title" /> 
-				<button ng-click="add(list, new_title)">+</button>
-			</div>
-		</div>
-	</div>
-	{% endverbatim %}
-
+	<!--Angular view injection -->
+	<ng-view></ng-view>
 
 
 
 		<!--AngularJS CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 
+		<!--AngularJS route module -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+
 
 	<!-- django import static -->
 	<script src="{% static 'scrumboard/scrumboard.js' %}"></script>
+
+	<!-- django import static login controller -->
+	<script src="{% static 'scrumboard/js/login.controller.js' %}"></script>
 
 	<!-- import app config scripting: Tells angular about django's CSRF -->
 	<script src="{% static 'scrumboard/scrumboard.config.js' %}"></script>

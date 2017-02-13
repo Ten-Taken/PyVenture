@@ -4,11 +4,12 @@
 
 	'use strict';
 
-	angular.module('scrumboard.demo', [])
-		.controller('ScrumboardController', ['$scope','$http',ScrumboardController]);
+	angular.module('scrumboard.demo', ['ngRoute'])
+		.controller('ScrumboardController', 
+			['$scope','$http','$location',ScrumboardController]);
 
 		// Angular CONTROLLER
-	function ScrumboardController($scope, $http){
+	function ScrumboardController($scope, $http,$location){
 
 		// ANGULAR MODEL
 		$scope.add = function(list,title){
@@ -33,11 +34,12 @@
 			*/
 		};
 
-		//Login function (temp posting hard-coded credentials)
-		$scope.login = function(){
-			$http.post('/auth_api/login/',
-				{username: 'bob', password: 'bob12345'});
-		};
+		$scope.logout = function(){
+			$http.get('/auth_api/logout/')
+				.then(function(){
+					$location.url('/login');
+				});
+		}
 
 		$scope.data = []; //Start with empty list
 
