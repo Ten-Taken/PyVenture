@@ -48,8 +48,12 @@
 			$scope.data = response.data; //This is assigning response to the empty list in JSON format.
 		}); 
 
+		$scope.sortBy = 'story_points';
+		$scope.reverse = true;
+		$scope.showFilters=false;
 
 	}//END ScrumboardController
 	
+
 
 }());
