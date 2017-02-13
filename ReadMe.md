@@ -22,7 +22,7 @@ The django_env directory is a virtual environment, and the application root leve
 
 While doing this, I was following along with a Pluralsight course taught by [Reindert-Jan Ekker](https://nl.linkedin.com/in/rjekker). The final project was to build a Scrum Board application that a team can use.
 
-
+The application implements authentication and view routing.
 
 Here are some screenshots
 
@@ -46,3 +46,12 @@ unnecessary network traffic.
 Editing data (PUT request)
 
 ![Edit GUI](images/django4screen.png?raw=true)
+
+
+**Authentication and Session**
+
+Invalid credentials
+![login failure](images/django6screen.png?raw=true)
+
+Successful POST
+![login success](images/django7screen.png?raw=true)
