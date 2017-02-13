@@ -26,16 +26,16 @@ from another tab).  NOTE  - the detection service uses the browser localStorage 
 may not function in Safari.
 
 Invalid credentials
-![login failure](images/django6screen.png?raw=true)
+![login failure](/images/django6screen.png?raw=true)
 
 Successful POST
-![login success](images/django7screen.png?raw=true)
+![login success](/images/django7screen.png?raw=true)
 
 
 **Managing Data**
 
 This is a quick view of table data through a web GUI of the sqlite3 database.
-![database](images/django8screen.png?raw=true)
+![database](/images/django8screen.png?raw=true)
 
 
 **Card Class API**
