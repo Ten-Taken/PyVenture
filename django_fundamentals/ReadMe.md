@@ -33,4 +33,17 @@ __Django__
 
 6. Make sure the virtual env is active before installing packages. (Otherwise they are global)
 7. Then `$ pip install django`
-8. You can specify a version with `$ pip install django==1.x` etc. (Otherwise latest LTS)
+8. You can specify a version with `$ pip install django==1.x` etc. (Otherwise latest LTS)  
+
+### Creating a Django project
+
+1. Activate environment `$ . django-env/bin/activate `
+2. Create new project `$ django-admin startproject tictactoe`
+3. cd into the project `$ cd tictactoe/`
+3. Launch dev server (localhost:8000) `$ python manage.py runserver`  
+
+*manage.py* is invoked to handle most admin commands in the shell
+*sqlite3*  packaged db for the dev environment
+*tictactoe* (Varies) this is the project directory created with `startproject`
+
+**Optional** : PyCharm can launch a dev server from the GUI
