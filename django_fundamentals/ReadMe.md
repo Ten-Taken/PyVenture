@@ -1,10 +1,12 @@
 # About
 
-This project uses the Django 1.11 LTS  
+This project uses the Django 1.11 LTS
 
 ## Project
 
-The project is a web application for playing Tic Tac Toe.  
+The project is a web application for playing Tic Tac Toe.
+I'm following along with a refresher course found at [this location](https://app.pluralsight.com/library/courses/django-fundamentals-update/table-of-contents "Django Fundamentals") .  
+
 Building out the project to completion is not a priority 
 at the moment. I'm mainly using this to go through env setup
 for the latest LTS.
