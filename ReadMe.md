@@ -5,10 +5,10 @@
 This repository is for learning projects related to the Python language,
 and the Django framework.
 
-programs
+wordcount_project - 2019
 -----------------
 
-The programs directory contains small shell programs built while familiarizing myself with the Python language and data structures.
+wordcount is a Django 2.1.3 application.
 
 
 django_angular_scrumboard
@@ -21,6 +21,12 @@ django_fundamentals
 ----------------------
 
 This directory hosts an example project with Django v1.11 (environment level). See the directory ReadMe for scope and purpose.
+
+
+programs
+-----------------
+
+The programs directory contains small shell programs built while familiarizing myself with the Python language and data structures.
 
 
 resources
