@@ -6,6 +6,9 @@ import operator
 def home(request):
     return render(request, 'home.html')
 
+def about(request):
+    return HttpResponse('This small Django application counts words in a passage of text.')
+
 def count(request):
     fulltext = request.GET['fulltext']
     wordlist = fulltext.split()
