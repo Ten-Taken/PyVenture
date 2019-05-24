@@ -3,12 +3,12 @@
 ## About  
 
 This repository is for learning projects related to the Python language,
-and the Django framework. 
+and the Django framework.
 
 programs
 -----------------
 
-In the programs directory I'm working on primarily small shell programs while familiarizing myself with the Python language and data structures.
+The programs directory contains small shell programs built while familiarizing myself with the Python language and data structures.
 
 
 django_angular_scrumboard
@@ -21,3 +21,9 @@ django_fundamentals
 ----------------------
 
 This directory hosts an example project with Django v1.11 (environment level). See the directory ReadMe for scope and purpose.
+
+
+resources
+----------------------
+
+Quick reference and resources.
