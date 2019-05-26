@@ -1,0 +1,16 @@
+language: python
+python:
+  - "3.6"
+
+services:
+  - docker
+
+# safelist
+branches:
+  only:
+    - recipe_API
+
+before_script: cd recipe_API_project/ && pip install docker-compose
+
+script:
+  - docker-compose run app sh -c "python manage.py test && flake8"
