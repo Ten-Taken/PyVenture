@@ -8,6 +8,7 @@ services:
 # safelist
 branches:
   only:
+    - master
     - recipe_API
 
 before_install: cd recipe_API_project/
