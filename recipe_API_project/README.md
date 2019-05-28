@@ -2,13 +2,13 @@
 
 ## About
 
-A REST API built with Django, Docker. PosgreSQL is used for the database.
+A REST API built with Django and Docker. PosgreSQL is used for the database.
+Token authentication is implemented, allowing for shared authentication
+across endpoints.
 
 ## Usage
 
 ### Testing
-
-All tests can be found in the tests directory of the core module.
 
 ```console
 foo@bar:~$ docker-compose run app sh -c "python manage.py test && flake8"
