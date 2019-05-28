@@ -38,3 +38,54 @@ From there, all users can be managed from localhost:8000/admin
 
 
 ## API
+
+### Create User
+
+Used to create a new user.
+
+**URL** : `api/user/create/`
+
+**Method** : `POST`
+
+**Request**
+
+```json
+{
+    "username": "iloveauth@example.com",
+    "password": "abcd1234",
+    "name": "Fred"
+}
+```
+
+**Response**
+
+```json
+{
+    "email": "iloveauth@example.com",
+    "name": "Fred"
+}
+```
+
+### Retrieve Auth Token
+
+Used to collect a Token for a registered User.
+
+**URL** : `api/user/token/`
+
+**Method** : `POST`
+
+**Request**
+
+```json
+{
+    "username": "iloveauth@example.com",
+    "password": "abcd1234"
+}
+```
+
+**Response**
+```json
+{
+    "token": "93144b288eb1fdccbe46d6fc0f241a51766ecd3d"
+}
+```
