@@ -51,7 +51,7 @@ Used to create a new user.
 
 ```json
 {
-    "username": "iloveauth@example.com",
+    "email": "iloveauth@example.com",
     "password": "abcd1234",
     "name": "Fred"
 }
@@ -78,7 +78,7 @@ Used to collect a Token for a registered User.
 
 ```json
 {
-    "username": "iloveauth@example.com",
+    "email": "iloveauth@example.com",
     "password": "abcd1234"
 }
 ```
