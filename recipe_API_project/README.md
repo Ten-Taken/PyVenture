@@ -11,7 +11,7 @@ across endpoints.
 ### Testing
 
 ```console
-foo@bar:~$ docker-compose run app sh -c "python manage.py test && flake8"
+foo@bar:~$ docker-compose run --rm app sh -c "python manage.py test && flake8"
 ```
 
 *flake8 is used for linting*
@@ -31,7 +31,7 @@ A custom user model has been implemented, so an email is expected for the userna
 To create a super user
 
 ```console
-foo@bar:~$ docker-compose run app sh -c "python manage.py createsuperuser"
+foo@bar:~$ docker-compose run --rm app sh -c "python manage.py createsuperuser"
 ```
 
 From there, all users can be managed from localhost:8000/admin
@@ -97,3 +97,9 @@ Allows a authenticated user to update their info.
 **URL** : `api/user/me/`
 
 **Method** : `GET`, `PATCH`, `PUT`,
+
+
+### Tags API
+
+
+### Recipe API
