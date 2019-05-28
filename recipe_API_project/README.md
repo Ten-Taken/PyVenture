@@ -89,3 +89,11 @@ Used to collect a Token for a registered User.
     "token": "93144b288eb1fdccbe46d6fc0f241a51766ecd3d"
 }
 ```
+
+### Logged-In User Management
+
+Allows a authenticated user to update their info.  
+
+**URL** : `api/user/me/`
+
+**Method** : `GET`, `PATCH`, `PUT`,
