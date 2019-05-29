@@ -102,4 +102,28 @@ Allows a authenticated user to update their info.
 ### Tags API
 
 
-### Recipe API
+### Recipes
+
+For managing and retrieving ingredients
+
+**URL** : `/api/recipe/ingredients/`
+
+**Method** : `GET`, `POST`, `PATCH`, `PUT`,
+
+**Response - GET**
+```json
+[
+    {
+        "id": 3,
+        "name": "Tumeric"
+    },
+    {
+        "id": 2,
+        "name": "Sugar"
+    },
+    {
+        "id": 1,
+        "name": "Cabbage"
+    }
+]
+```
