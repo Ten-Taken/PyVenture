@@ -99,10 +99,29 @@ Allows a authenticated user to update their info.
 **Method** : `GET`, `PATCH`, `PUT`,
 
 
-### Tags API
+### Tags
 
+For managing and retrieving tags
 
-### Recipes
+**URL** : `/api/recipe/tags/`
+
+**Method** : `GET`, `POST`, `PATCH`, `PUT`,
+
+**Response - GET**
+```json
+[
+    {
+        "id": 1,
+        "name": "Vegan"
+    },
+    {
+        "id": 2,
+        "name": "Appetizer"
+    }
+]
+```
+
+### Ingredients
 
 For managing and retrieving ingredients
 
@@ -126,4 +145,57 @@ For managing and retrieving ingredients
         "name": "Cabbage"
     }
 ]
+```
+
+### Recipes
+
+For managing and retrieving recipes
+
+**URL** : `/api/recipe/recipes/`
+
+**Method** : `GET`, `POST`, `PATCH`, `PUT`,
+
+**Response - GET**
+```json
+[
+    {
+        "id": 1,
+        "title": "Vegan Key Lime Pie",
+        "ingredients": [
+            4
+        ],
+        "tags": [
+            1
+        ],
+        "time_minutes": 60,
+        "price": "15.00",
+        "link": ""
+    }
+]
+```
+
+Querying an individual recipe returns a detail view, with tags and ingredients serialized.
+
+**URL** : /api/recipe/recipes/1/
+
+```json
+{
+    "id": 1,
+    "title": "Vegan Key Lime Pie",
+    "ingredients": [
+        {
+            "id": 4,
+            "name": "Limes"
+        }
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "Vegan"
+        }
+    ],
+    "time_minutes": 60,
+    "price": "15.00",
+    "link": ""
+}
 ```
