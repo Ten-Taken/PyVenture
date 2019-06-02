@@ -12,31 +12,31 @@ and the Django framework.
 recipe_API_project is a REST API built with Django, Django REST, and Docker.
 
 
-wordcount_project - 2019
+[wordcount_project - 2019](/wordcount_project)
 -----------------
 
-wordcount is a Django 2.1.3 application.
+wordcount is a Django 2.1.3 web application.
 
 
-django_angular_scrumboard
+[django_angular_scrumboard](/django_angular_scrumboard)
 ----------------------
 
-In this project (environment level) I've built a complete web application using Django v1.9, Django REST, AngularJS, and SQLite3. See the directory ReadMe for scope and purpose.
+A Django 1.9 web application using Django REST, AngularJS, and SQLite3.
 
 
-django_fundamentals
+[django_fundamentals](/django_fundamentals)
 ----------------------
 
-This directory hosts an example project with Django v1.11 (environment level). See the directory ReadMe for scope and purpose.
+A Django 1.11 application (*unfinished*).
 
 
-programs
+[programs](/programs)
 -----------------
 
-The programs directory contains small shell programs built while familiarizing myself with the Python language and data structures.
+Small shell programs built while familiarizing or refreshing knowledge on the Python language and data structures.
 
 
-resources
+[resources](/resources)
 ----------------------
 
 Quick reference and resources.
