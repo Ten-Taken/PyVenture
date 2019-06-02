@@ -199,3 +199,16 @@ Querying an individual recipe returns a detail view, with tags and ingredients s
     "link": ""
 }
 ```
+
+**URL** : `/api/recipe/recipes/1/upload-image/`
+
+**Method** : `POST`
+
+Adds an image to a recipe object.
+
+```json
+{
+    "id": 1,
+    "image": "http://localhost:8000/media/uploads/recipe/9d628166-98f0-4955-808f-91b040e71392.jpeg"
+}
+```
