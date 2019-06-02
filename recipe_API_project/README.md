@@ -122,6 +122,9 @@ For managing and retrieving tags
     }
 ]
 ```
+To show only tags that have been assigned to recipes
+
+**Filter** : `/api/recipe/tags/?assigned_only=1`
 
 ### Ingredients
 
@@ -148,6 +151,10 @@ For managing and retrieving ingredients
     }
 ]
 ```
+
+To show only ingredients that have been assigned to recipes
+
+**Filter** : `/api/recipe/ingredients/?assigned_only=1`
 
 ### Recipes
 
