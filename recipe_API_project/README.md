@@ -2,9 +2,11 @@
 
 ## About
 
-A REST API built with Django and Docker. PosgreSQL is used for the database.
-Token authentication is implemented, allowing for shared authentication
-across endpoints.
+A REST API for storing and retrieving recipes, built with Django and Docker.
+PosgreSQL is used for the database. Token authentication is implemented,
+allowing for shared authentication across endpoints.  Filtering is
+enabled on recipes, tags, and ingredients.  High test coverage as development
+followed TDD methodology.
 
 ## Usage
 
@@ -200,11 +202,50 @@ Querying an individual recipe returns a detail view, with tags and ingredients s
 }
 ```
 
+Filtering recipes by Tag or Ingredient id's
+
+**URL** : `/api/recipe/recipes/?ingredients=2`
+
+**METHOD** : `GET`
+
+```json
+[
+    {
+        "id": 2,
+        "title": "Sugared Cabbage Delight",
+        "ingredients": [
+            1,
+            2
+        ],
+        "tags": [
+            2
+        ],
+        "time_minutes": 2,
+        "price": "5.00",
+        "link": ""
+    },
+    {
+        "id": 1,
+        "title": "Vegan Key Lime Pie",
+        "ingredients": [
+            2,
+            4
+        ],
+        "tags": [
+            1
+        ],
+        "time_minutes": 35,
+        "price": "15.00",
+        "link": ""
+    }
+]
+```
+
+Adding an image to a recipe object.
+
 **URL** : `/api/recipe/recipes/1/upload-image/`
 
 **Method** : `POST`
-
-Adds an image to a recipe object.
 
 ```json
 {
